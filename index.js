@@ -11,8 +11,13 @@ res.render('index.ejs')
 })
 
 app.get('/noticias' , (req,res)=>{
-res.send('Teste')
+res.render('noticias/index.ejs')
 })
+
+app.get('/noticias/01' , (req,res)=>{
+res.render('noticias/01/index.ejs')
+})
+
 
 app.listen(port , () =>{
 console.log ("Servidor Executado na porta: " + port)
